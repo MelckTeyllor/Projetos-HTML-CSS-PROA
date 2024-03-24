@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    height: 100%;
+    width: 100vh;
+    min-height: 100vh;
+    background-image: url(./assets/Avatar_-The-Last-Airbender-Live-Action-Netflix.webp);
+    background-repeat: no-repeat;
+    background-position: 1% 50%;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+/* Estilo de logo e links */
+
+.topo  {
+    margin-top: -50px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+   
+}
+.links  {
+    display:flex; 
+    gap: 50px;
+    margin-left: 900px;
+    
+
+}
+
+.links a {
+
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffff;
+    
+}
+
+.links a:hover {
+    text-decoration: underline #e60000 2px;
+    
+}
+
+.lupa {
+    margin-left: 50px;
+    padding: 5px;
+    
+}
+.elipse:hover {
+    border: 2px solid #ffffff;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 360px;
+    transition: all .2s;
+}
+
+/* Estilizando container */
+
+.container {
+    min-height: 100%;
+    margin: -90px 30px 0;
+    padding: 20px;
+}
+
+.logo_avatar {
+    margin-bottom: 40px;
+}
+
+.btn_box {
+    margin-bottom:  40px;
+}
+.botton_temp {
+    padding: 20px 45px;
+    background-color: #9a0000;
+    border-bottom: 4px solid #ffffff;
+    border-radius: 7px; 
+    text-decoration: none;
+    color: #ffffff;
+    transition: all .3s;
+}
+
+.btn_box .botton_temp:hover {
+    background-color: rgb(255, 62, 62);
+    
+}
+
+.sinopse {
+    padding: 10px;
+    margin-bottom: 10px;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ffffff9c;
+    border-radius: 15px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    
+    padding: 8px;
+    border-radius: 7px;
+    color:#ffff;
+    background-color: #9a0000;
+    border-bottom: 4px solid #ffffff;
+    font-size: 20px;
+    gap: 15px;
+    cursor: pointer;
+    width: 200px;
+    transition: all .3s;
+}
+
+.button:hover {
+    background-color: rgb(255, 62, 62);
+}
+
+.button svg {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilo do Footerr */
+footer section {
+    margin-left: 50px ;
+}
+
+footer .cards {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    margin-left: 150px;
+}
+
+footer .card {
+    height: 130px;
+    max-width: 300px;
+    box-shadow: 12px 0px 32px 2px #000;
+    margin-left: -100px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+footer .cardds .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards .card:hover {
+    transform: translateY(-16px) rotate(3deg);
+}
+
+.cards .card:hover ~ .card {
+    transform: translateX(120px);
+}

@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-width: 300px;
+   
+    min-height: 100vh;
+}
+
+body {
+    
+    height: 100%;
+    background: rgb(6,6,6);
+    background: linear-gradient(90deg, rgba(6,6,6,1) 0%, rgba(88,30,30,1) 20%, rgba(182,57,57,1) 40%, rgba(182,57,57,1) 60%, rgba(88,30,30,1) 80%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.58);
+    clip-path: circle(50% at bottom right);
+}
+
+/* Estilo do Topo */
+header {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 300px;
+    max-width: 1200px;
+}
+.topo {
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.logo:hover {
+    transform: scale(1.3);
+    transition: 0.4s;
+}
+
+header nav .nav-links   {
+    display: flex;
+    width: 100%;
+    
+}
+
+header nav .nav-links li {
+    list-style: none;
+}
+
+header nav .nav-links li a {
+    display: inline-block;
+    margin-left: 100px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav .nav-links li a:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+/* Estilo Main/card left */
+
+.main {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: top-center;
+    justify-content: space-between;  
+}
+
+main section .card-left{
+    max-width: 600px;
+    margin-left: 80px;
+    margin-right: 20px;
+}
+
+main section .card-left  h2{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 2.5em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    
+}
+
+main section .card-left span {
+    color: #ff0000;
+    display: block;
+    font-size: 110px;
+}
+
+main section .card-left p {
+    color:#fff;
+    
+}
+
+main section .btn {
+    margin-top: 40px;
+    padding: 10px 25px;
+    border: 1px solid #ffffff00;
+    border-radius: 40px;
+    background-color: #ff0000;
+    transition: 0.3s ease-in-out;
+}
+main section .btn a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+main section .btn:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+    border: 1px solid #fff;
+}
+
+/* Estilo  de Icons */
+main section .icones {
+    
+    display: flex;
+    gap: 50px;
+    margin-top: 35px;
+    color: #fff;
+    
+}
+
+main section .icons:hover {
+    border-radius: 500px;
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.372);
+    transform: scale(1.3);
+    transition: 0.2s;
+}
+
+/* Estilo de card right */
+.card-right {
+    max-width: 500px;
+}
+
+.products {
+    vertical-align: bottom;
+    position: relative;
+}
+

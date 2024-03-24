@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+:root {
+    --Bg-color: #140B5c;
+    --Body-bg-color: #EEECEB;
+    --Bg-line:#AFAFB6;
+    --Footer-button: #0F0844;
+}
+
+footer {
+    position: fixed;
+    background-color: var(--Bg-color);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer .container{
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px; 
+}
+
+footer .container .topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:25px ;
+    
+}
+
+footer .container .topo h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+
+footer .container .topo .social-links   {
+    display: flex;
+    gap: 50px;
+}
+
+.social-links button  {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+
+}
+
+.social-links button a svg {
+    display: block;
+    margin: auto;
+    color: #fff;
+}
+.face {
+    background-color: #4267B2;
+}
+.insta {
+    background-color: #E1306C;
+}
+.linkedin{
+    background-color: #0077b5;
+}
+.youtube{
+    background-color: #FF0000;    
+}
+.social-links button:hover {
+    transform: scale(1.2);
+    transition:  0.3s;
+    border: 1px solid #fff;
+}
+
+.section h2, a {
+    display: block;
+    
+}
+.section {
+    width: 100%;
+    
+}
+.content {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.section a{
+    margin-left: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.section a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.section h2 {
+    color: #fff;
+    border-bottom: 3px solid #ffffffec;
+    width: 15%;
+    margin-bottom: 15px;
+}
+.form-inscricao {
+    padding-right: 30px;
+}
+
+.form-inscricao h2 {
+    color: #fff;
+    border-bottom: 3px solid #ffffffec;
+    margin-bottom: 15px;  
+    width: calc(100% +  55px);
+
+}
+
+.form-inscricao input {
+    height: 40px;
+    width: calc(100% +  55px);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0f0844;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+}
+
+.form-inscricao button {
+    height: 40px;
+    width: calc(100% +  55px);
+    padding: 5px 10px;
+    color:  #0F0844;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-inscricao button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.copy  {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    opacity: 0.8;
+    background-color: #0F0844;
+}
+
+.copy p:hover {
+    text-decoration: underline;
+}
+
+@media  (max-width: 900px) {
+    footer .content  {
+        flex-wrap: wrap;
+    }
+    footer .content .section {
+        width: 25%;
+    }
+
+    footer .content .form-inscricao {
+        margin-top: 15px;
+        width: 20%;
+    } 
+}
+
+@media  (max-width: 714px) {
+
+    
+    footer .container .topo .social-links { 
+        gap: 30px;
+    }
+
+    
+    svg {
+        width: 30px;
+        height: 30;
+    }
+  
+    footer .content .section a {
+        font-size: 12px;
+    }
+    footer .content .section h2 {
+        font-size: 16px;
+    }
+    
+    footer .content .form-inscricao {
+        width: 40%;
+    }
+
+    .form-inscricao button {
+        height: 30px;
+        width: calc(100% +  30px);
+        padding: 2px 5px;
+    }
+    .form-inscricao input {
+        height: 30px;
+        width: calc(100% +  30px);
+        padding: 2px 5px;
+    }
+    .form-inscricao h2 {
+        font-size: 20px;
+        width: calc(100% +  5px);
+    }
+    .copy p{
+        font-size: 13px;
+    }
+
+}
+
+@media  (max-width: 520px) {
+
+    footer .container .topo {
+        display: block;
+    }
+    footer .container .topo h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    footer .container .topo .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    footer .container .topo .social-links button {
+        width: 32px;
+        height: 32px;
+    }
+
+    footer .container .topo .social-links button svg {
+        width: 16px;
+        height: 16px;
+      
+    }
+
+    footer .container {
+        padding: 10px;
+    }
+
+    footer .container .content {
+        width: 100%;
+    }
+    footer .content .section {
+        width: 30%;
+        gap: 10px
+    }
+
+    footer .form-inscricao h2 {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    footer .form-inscricao button {
+        height: 30px;
+        width: calc(60% +  50px);
+        padding: 5px; 
+        font-size: 11px;  
+    }
+
+    footer .form-inscricao input{
+        height: 30px;
+        width: calc(60% +  50px);
+        padding: 5px;
+        
+    }
+    
+
+    footer .form-inscricao input::placeholder {
+        font-size: 11px;
+    }
+
+
+    .copy  {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 12px;
+    }
+}

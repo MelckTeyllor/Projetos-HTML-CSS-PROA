@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+  
+}
+body {
+    background-color: rgb(53, 4, 98);
+}
+section {
+    width: 20%;
+    
+    margin : 100px auto 0;
+}
+.container {
+    padding: 20% 10%;
+    border-radius: 20px;; 
+    background-color: #fff;
+}
+
+h1 {
+    width: 10%;
+    font-weight: 600;
+    font-size: 40px;
+    border-bottom: 2px solid  rgb(53, 4, 98);	
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px 5px;
+    width: 100%;
+    margin-bottom: 5%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(137, 137, 137);
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+input:focus{
+    border-color:  rgb(53, 4, 98) ;
+    transition: 1.5s;
+}
+
+.btn-continuar {
+    width: 100%;
+    padding: 3%;
+    background-color:  rgb(53, 4, 98) ;
+    color:#fff;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 4%;
+
+    margin-top: 10%;
+}
+
+.btn-continuar:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+    background: linear-gradient(to right, #2c0d4e, #5603e4)
+}
+p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 4%;
+}
+
+
+.btn-social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8%;
+    padding: 3%;
+    border: none;
+    border-radius: 5px;
+
+    color: #fff;
+}
+.btn-social a {
+    color: #fff;
+}
+
+.btn-social-Face {
+background-color: rgba(15, 39, 133, 0.857);
+}
+
+.btn-social-Face svg {
+    margin-right: 50px;
+    
+}
+
+.btn-social-Face:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+    background: linear-gradient(to right,  #11a4ff, #081789e7)
+}
+
+.btn-social-Twiter svg {
+    margin-right: 50px;
+}
+
+.btn-social-Twiter {
+    background-color: rgba(23, 174, 255, 0.857);
+}
+
+.btn-social-Twiter:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+    background: linear-gradient(to right, #081789d5, #11a4ff)
+}
